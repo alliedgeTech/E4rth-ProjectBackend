@@ -1,0 +1,29 @@
+[
+    {
+        "roles": ["ADMIN"],
+        "method": {
+            "get": [],
+            "post": [],
+            "put": [],
+            "delete": [""]
+        }
+    },
+    {
+        "roles": ["INVESTER"],
+        "method": {
+            "get": [""],
+            "post": [],
+            "put": [],
+            "delete": []
+        }
+    },
+    {
+        "roles": ["COMPANY"],
+        "method": {
+            "get": [],
+            "post": [],
+            "put": [],
+            "delete": []
+        }
+    }
+]
