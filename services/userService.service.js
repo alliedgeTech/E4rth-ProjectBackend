@@ -14,7 +14,6 @@ const signUp = async (userData) => {
     companyName,
     companyEmail,
     password: hashedPassword,
-    websiteURL,
     facebook,
     google,
     apple,
