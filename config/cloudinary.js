@@ -13,7 +13,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
-    folder: 'Biltup', // Set folder in Cloudinary
+    folder: 'E4RTH', // Set folder in Cloudinary
     resource_type: 'auto',      // Automatically detect file type
     format: async (req, file) => 'pdf',  // Specify format, e.g., 'pdf'
     public_id: (req, file) => Date.now() + '-' + file.originalname, // Customize public_id
