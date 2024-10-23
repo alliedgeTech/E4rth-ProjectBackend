@@ -3,6 +3,7 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 require("dotenv").config();
 const Projectlist = require("./routes/ProjectList.routes");
+const invest =require("./routes/invest.routes")
 const user = require("./routes/user.routes");
 
 const app = express();
@@ -24,6 +25,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/Projectslist", Projectlist);
 app.use("/api/user", user);
+app.use("/inverst",invest);
 
 // Start the server
 const PORT = process.env.PORT || 8000;
