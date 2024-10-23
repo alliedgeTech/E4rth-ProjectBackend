@@ -13,7 +13,7 @@ const createInvestment = async (req, res) => {
 /** Get All Investments with Filters, Date Range, and Pagination */
 const getAllInvestments = async (req, res) => {
   try {
-    const { user_id, project_id, fromDate, toDate, page = 1, limit = 10, sortBy = 'createdAt', order = 'desc' } = req.query;
+    const { user_id, project_id, fromDate, toDate, page = 1, limit = 10, sortBy = 'createdAt', order = 'desc' } = req.body;
     
     const filters = {};
     if (user_id) filters.user_id = user_id;

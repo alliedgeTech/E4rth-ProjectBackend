@@ -37,7 +37,7 @@ const updateProject = async (req, res) => {
 };
 const getAllProjects = async (req, res) => {
   try {
-    const projects = await projectService.getAllProjects(req.query);
+    const projects = await projectService.getAllProjects(req.body);
     res.status(200).json(projects);
   } catch (error) {
     res.status(400).json({ error: error.message });
