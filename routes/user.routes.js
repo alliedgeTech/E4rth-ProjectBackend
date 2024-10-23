@@ -2,7 +2,7 @@
 const express = require("express");
 const userController = require("../controllers/user.Controller");
 const { upload, uploadToCloudinary } = require("../config/cloudinary");
-const authenticate = require("../middlewares/authmiddleware"); // Use if needed for authentication
+const authenticate = require("../middlewares/authmiddleware"); 
 const router = express.Router();
 // Public Routes
 router.post("/signup", userController.signUp);

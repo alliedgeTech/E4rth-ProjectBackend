@@ -2,9 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const connectDB = require("./config/db");
 require("dotenv").config();
-const investorHistoryRoutes = require('./routes/investorHistory.routes');
-const projectsInvestHistoryRoutes = require('./routes/projectsInvestHistory.routes');
-const user = require('./routes/user.routes')
+const Projectlist = require("./routes/ProjectList.routes");
+const user = require("./routes/user.routes");
 
 const app = express();
 
@@ -22,11 +21,9 @@ app.get("/", (req, res) => {
   res.send("E4Rth-Backend is running");
 });
 
-app.use('/api/investor-history', investorHistoryRoutes);
-app.use('/api/projects-invest-history', projectsInvestHistoryRoutes);
-app.use('/api/user',user);
 
-
+app.use("/api/Projectslist", Projectlist);
+app.use("/api/user", user);
 
 // Start the server
 const PORT = process.env.PORT || 8000;
