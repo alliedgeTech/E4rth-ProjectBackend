@@ -25,8 +25,8 @@ app.get("/", (req, res) => {
 
 app.use("/api/Projectslist", Projectlist);
 app.use("/api/user", user);
-app.use("/inverst",invest);
-app.use("/transactions",transactions);
+app.use("/api/inverst",invest);
+app.use("/api/transactions",transactions);
 
 // Start the server
 const PORT = process.env.PORT || 8000;
